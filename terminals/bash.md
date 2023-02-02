@@ -6,3 +6,6 @@
 
 # export stdout, stderror to local file in append mode
 `<some_command> > temp.log 2>&1 &  # writes to temp.log file`
+
+# Delete local branches that have been merged on remote
+``git branch -d `git branch --list "?????-*"` ``
